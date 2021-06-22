@@ -48,7 +48,7 @@
         </div>
         <div class="col-md-4">
           <div class="form-group">
-            <label for="data">Data</label>
+            <label for="data">Desde</label>
             <input type="date" class="form-control" v-model="cliente.desde" id="data" required>
           </div>
         </div>

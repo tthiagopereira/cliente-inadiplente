@@ -57,12 +57,17 @@ export default {
         store(){
             this.$http.post('clientes', this.cliente)
                 .then(resp => {
-                    console.log(resp.data)
-                    this.index()
-                    this.viewForm()
-                    this.cliente = ''
-                }
-            )
+                        console.log(resp.data)
+                        this.index()
+                        this.viewForm()
+                            this.cliente.name= '',
+                            this.cliente.email= '',
+                            this.cliente.status= '',
+                            this.cliente.titulo= '',
+                            this.cliente.valor= '',
+                            this.cliente.desde= ''
+                    }
+                )
         },
         viewForm(){
             this.form = !this.form
